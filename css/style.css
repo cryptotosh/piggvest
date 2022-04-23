@@ -1,0 +1,118 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;1,200&display=swap'); */
+
+/* ..........COLOR PICKER..........
+Button bg: #062b6f 
+Body BG: #062863
+body color: #79818f
+input bg: #edf2f7
+input placeholder color: #c3cdd9
+form color: #4a5568
+form bg: #ffffff
+label color: #5b6576
+header h2 color: #083e9e
+header p color:#9ba1ab
+a:hover color: #5a6b8a
+-----------------------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*::placeholder{
+    color: #c3cdd9 !important;
+}
+body{
+    background: #062863;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+    /* position: fixed; */
+    /* min-width: 500px; */
+    /* top: 0px;
+	left: 0px;
+    z-index: 2000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	pointer-events: none; */
+}
+.logo{
+    text-align: center;
+    margin: 3rem 0;
+}
+.reg-form {
+    width: 65%;
+    height: auto;
+    /* min-width: 50%; */
+    margin: 1rem auto;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    color: #4a5568;
+    background: #ffffff;
+    border-radius: 20px 20px 20px 0;
+  }
+header{
+    text-align: center;
+    margin: 2rem 2rem 1rem;
+    color: #083e9e;
+}
+header p{
+    color: #9ba1ab;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.3rem 2rem;
+}
+.form-group label{
+    padding: 1.5rem 0 .5rem;
+}
+.form-control{
+    padding: 1rem;
+    color: #474d58;
+    font-weight: 500;
+    background: #edf2f7;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    width: 91%;
+    padding: 1rem;
+    margin: 2rem auto 2.5rem;
+    background: #062b6f;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 10px 10px 10px 0;
+    text-transform: uppercase;
+}
+.footer{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 10px;
+}
+.footer > div{
+    margin-bottom: 1.5rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+}
+.footer a:hover{
+    color: #5a6b8a;
+}
