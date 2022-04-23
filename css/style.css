@@ -99,6 +99,7 @@ button{
     font-weight: 700;
     border-radius: 10px 10px 10px 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* Footer Styling */
