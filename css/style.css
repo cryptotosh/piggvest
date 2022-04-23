@@ -5,21 +5,25 @@ Button bg: #062b6f
 Body BG: #062863
 body color: #79818f
 input bg: #edf2f7
-input placeholder color: #c3cdd9
+input placeholder color: #4a5568b9
 form color: #4a5568
 form bg: #ffffff
 label color: #5b6576
 header h2 color: #083e9e
-header p color:#9ba1ab
+header p color: #4a5568
 a:hover color: #5a6b8a
 -----------------------------------*/
+
+/* Universal Styling */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Karla', sans-serif;
 }
 *::placeholder{
-    color: #c3cdd9 !important;
+    color: #4a5568b9 !important;
+    font-weight: 500;
 }
 body{
     background: #062863;
@@ -31,23 +35,15 @@ body{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
-    /* position: fixed; */
-    /* min-width: 500px; */
-    /* top: 0px;
-	left: 0px;
-    z-index: 2000;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	pointer-events: none; */
 }
 .logo{
     text-align: center;
     margin: 3rem 0;
 }
+
+/* Form Styling */
 .reg-form {
-    width: 65%;
+    width: 95%;
     height: auto;
     /* min-width: 50%; */
     margin: 1rem auto;
@@ -62,26 +58,30 @@ body{
   }
 header{
     text-align: center;
-    margin: 2rem 2rem 1rem;
+    margin: 3rem 2rem 1rem;
     color: #083e9e;
 }
 header p{
-    color: #9ba1ab;
+    color: #4a5568;
     font-family: 'Karla', sans-serif;
     font-weight: 200;
+    margin-top: .5rem;
 }
 .form-group{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0.3rem 2rem;
+    font-size: 13px;
+    padding: 0.4rem 2.5rem;
 }
 .form-group label{
     padding: 1.5rem 0 .5rem;
+    font-weight: 600;
 }
 .form-control{
     padding: 1rem;
-    color: #474d58;
+    color: #1a202c;
+    font-size: 14px;
     font-weight: 500;
     background: #edf2f7;
     border: none;
@@ -89,8 +89,10 @@ header p{
     outline: none;
 }
 button{
-    width: 91%;
+    width: 90%;
     padding: 1rem;
+    /* padding: 0.4rem 1rem; */
+    /* margin: 2rem auto; */
     margin: 2rem auto 2.5rem;
     background: #062b6f;
     color: #ffffff;
@@ -98,11 +100,13 @@ button{
     border-radius: 10px 10px 10px 0;
     text-transform: uppercase;
 }
+
+/* Footer Styling */
 .footer{
     text-align: center;
     padding: 1rem;
     margin-bottom: 2.5rem;
-    font-size: 10px;
+    font-size: 14px;
 }
 .footer > div{
     margin-bottom: 1.5rem;
@@ -115,4 +119,21 @@ button{
 }
 .footer a:hover{
     color: #5a6b8a;
+}
+
+/* Media Responsiveness */
+@media all and (min-width: 412px){
+    .reg-form{
+    width: 90%;
+    }
+}
+@media all and (min-width: 600px){
+    .reg-form{
+    width: 450px;
+    }
+}
+@media all and (min-width: 768px){
+    .reg-form{
+    width: 450px;
+    }
 }
